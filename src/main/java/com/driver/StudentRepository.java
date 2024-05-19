@@ -19,7 +19,10 @@ public class StudentRepository {
 
     public void saveStudent(Student student){
         // your code goes here'
+//        System.out.println(student);
         studentMap.put(student.getName(),student);
+//        System.out.println(studentMap);
+
     }
 
     public void saveTeacher(Teacher teacher){
@@ -53,6 +56,8 @@ public class StudentRepository {
     }
 
     public List<String> findAllStudents(){
+
+        System.out.println(studentMap);
         // your code goes here
         List<String> arr = new ArrayList<>();
         for(String s : studentMap.keySet()){
