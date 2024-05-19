@@ -1,5 +1,8 @@
 package com.driver;
 
+import lombok.Data;
+
+@Data
 public class Teacher {
 
     private String name;
