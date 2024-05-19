@@ -33,7 +33,7 @@ public class StudentRepository {
     public void saveStudentTeacherPair(String student, String teacher){
         if(studentMap.containsKey(student) && teacherMap.containsKey(teacher)){
             // your code goes here
-            List<String> list = teacherStudentMapping.getOrDefault(teacherStudentMapping,new ArrayList<>());
+            List<String> list = teacherStudentMapping.getOrDefault(teacher,new ArrayList<>());
             list.add(student);
             teacherStudentMapping.put(teacher,list);
         }
